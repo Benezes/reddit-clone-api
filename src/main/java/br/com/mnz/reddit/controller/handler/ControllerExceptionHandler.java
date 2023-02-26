@@ -3,6 +3,7 @@ package br.com.mnz.reddit.controller.handler;
 import br.com.mnz.reddit.controller.handler.utils.StandardError;
 import br.com.mnz.reddit.controller.handler.utils.ValidationError;
 import br.com.mnz.reddit.service.exception.PostNotFoundException;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -10,7 +11,6 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import javax.servlet.http.HttpServletRequest;
 
 @ControllerAdvice
 public class ControllerExceptionHandler {

@@ -5,13 +5,13 @@ import br.com.mnz.reddit.dto.response.PostResponse;
 import br.com.mnz.reddit.entity.PostEntity;
 import br.com.mnz.reddit.repository.PostRepository;
 import br.com.mnz.reddit.service.exception.PostNotFoundException;
+import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.time.LocalDateTime;
 import java.util.UUID;
 

@@ -3,6 +3,7 @@ package br.com.mnz.reddit.controller;
 import br.com.mnz.reddit.dto.request.PostRequest;
 import br.com.mnz.reddit.dto.response.PostResponse;
 import br.com.mnz.reddit.service.PostService;
+import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -12,7 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
+
 import java.util.UUID;
 
 @RestController

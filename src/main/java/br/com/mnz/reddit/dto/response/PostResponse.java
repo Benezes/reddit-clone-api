@@ -3,11 +3,15 @@ package br.com.mnz.reddit.dto.response;
 import br.com.mnz.reddit.entity.PostEntity;
 import lombok.Data;
 
+import java.io.Serial;
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
-public class PostResponse {
+public class PostResponse implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 1L;
 
     private UUID userId;
     private String title;
